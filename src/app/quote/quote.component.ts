@@ -14,6 +14,9 @@ export class QuoteComponent implements OnInit {
     new Quote (4, 'You only live once, but if you do it right, once is enough.', 'Mae West'),
     new Quote (5, 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A.Edison'),
   ];
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit(): void {
