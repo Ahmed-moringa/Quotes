@@ -12,7 +12,7 @@ export class QuoteComponent implements OnInit {
     new Quote (2, 'Life is what happens when you’re busy making other plans.', 'John Lennon',new Date (1999,10.10)),
     new Quote (3, 'Get busy living or get busy dying.', 'Stephen King',new Date (1999,10.10)),
     new Quote (4, 'You only live once, but if you do it right, once is enough.', 'Mae West',new Date (1999,10.10)),
-    new Quote (5, 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A.Edison',new Date (1999,10.10)),
+    
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
