@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    {id:1, name:'The purpose of our lives is to be happy', author: 'Dalai Lama'},
-    {id:2,name:'Life is what happens when you’re busy making other plans.', author: 'John Lennon'},
-    {id:3,name:'Get busy living or get busy dying.', author: 'Stephen King'},
-    {id:4,name:'You only live once, but if you do it right, once is enough.', author: 'Mae West'},
-    {id:5,name:'Many of life’s failures are people who did not realize how close they were to success when they gave up.', author: 'Thomas A.Edison'},
+    new Quote (1, 'The purpose of our lives is to be happy', 'Dalai Lama'),
+    new Quote (2, 'Life is what happens when you’re busy making other plans.', 'John Lennon'),
+    new Quote (3, 'Get busy living or get busy dying.', 'Stephen King'),
+    new Quote (4, 'You only live once, but if you do it right, once is enough.', 'Mae West'),
+    new Quote (5, 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A.Edison'),
   ];
   constructor() { }
 
