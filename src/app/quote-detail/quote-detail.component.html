@@ -2,6 +2,6 @@
 <p>{{quote.author}}</p>
 <p>Last seen  {{quote.completeDate|dateCount}} days</p>
 <div>
-    <app-votes></app-votes>
+    <app-votes appHighlight ></app-votes>
 </div>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
