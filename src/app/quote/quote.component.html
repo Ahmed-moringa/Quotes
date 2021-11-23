@@ -3,15 +3,15 @@
     <hr>
     <div class="row">
         <div class="col-md-6">
-            <div *ngFor='let quote of quotes; let i = index'></div>
-        </div>
-        <div>
-            <h4>{{quote.name}}</h4>
-            <button (click)='toggleDetails(i)'>Details</button>
-        </div>
-        <div *ngIf='quote.showDescription'>
-            <app-quote-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-        </div>
+            <div *ngFor='let quote of quotes; let i = index'>
+                <div>
+                    <h4>{{quote.name}}</h4>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Details</button>
+                </div>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-detail [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+                </div>
+            </div>
         </div>
     </div>
 </div>
